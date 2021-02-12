@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE95C54325D68ED3006448DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C54225D68ED3006448DE /* AppDelegate.swift */; };
+		CE95C54525D68ED3006448DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C54425D68ED3006448DE /* SceneDelegate.swift */; };
+		CE95C54725D68ED3006448DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C54625D68ED3006448DE /* ViewController.swift */; };
+		CE95C54A25D68ED3006448DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95C54825D68ED3006448DE /* Main.storyboard */; };
+		CE95C54D25D68ED3006448DE /* SehatQ_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE95C54B25D68ED3006448DE /* SehatQ_test.xcdatamodeld */; };
+		CE95C54F25D68ED5006448DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE95C54E25D68ED5006448DE /* Assets.xcassets */; };
+		CE95C55225D68ED5006448DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95C55025D68ED5006448DE /* LaunchScreen.storyboard */; };
+		CE95C55D25D68ED5006448DE /* SehatQ_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C55C25D68ED5006448DE /* SehatQ_testTests.swift */; };
+		CE95C56825D68ED5006448DE /* SehatQ_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C56725D68ED5006448DE /* SehatQ_testUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE95C55925D68ED5006448DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE95C53725D68ED3006448DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE95C53E25D68ED3006448DE;
+			remoteInfo = "SehatQ-test";
+		};
+		CE95C56425D68ED5006448DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE95C53725D68ED3006448DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE95C53E25D68ED3006448DE;
+			remoteInfo = "SehatQ-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE95C53F25D68ED3006448DE /* SehatQ-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SehatQ-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE95C54225D68ED3006448DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE95C54425D68ED3006448DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE95C54625D68ED3006448DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE95C54925D68ED3006448DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE95C54C25D68ED3006448DE /* SehatQ_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SehatQ_test.xcdatamodel; sourceTree = "<group>"; };
+		CE95C54E25D68ED5006448DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE95C55125D68ED5006448DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE95C55325D68ED5006448DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE95C55825D68ED5006448DE /* SehatQ-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SehatQ-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE95C55C25D68ED5006448DE /* SehatQ_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SehatQ_testTests.swift; sourceTree = "<group>"; };
+		CE95C55E25D68ED5006448DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE95C56325D68ED5006448DE /* SehatQ-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SehatQ-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE95C56725D68ED5006448DE /* SehatQ_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SehatQ_testUITests.swift; sourceTree = "<group>"; };
+		CE95C56925D68ED5006448DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE95C53C25D68ED3006448DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE95C55525D68ED5006448DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE95C56025D68ED5006448DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE95C53625D68ED3006448DE = {
+			isa = PBXGroup;
+			children = (
+				CE95C54125D68ED3006448DE /* SehatQ-test */,
+				CE95C55B25D68ED5006448DE /* SehatQ-testTests */,
+				CE95C56625D68ED5006448DE /* SehatQ-testUITests */,
+				CE95C54025D68ED3006448DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE95C54025D68ED3006448DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C53F25D68ED3006448DE /* SehatQ-test.app */,
+				CE95C55825D68ED5006448DE /* SehatQ-testTests.xctest */,
+				CE95C56325D68ED5006448DE /* SehatQ-testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE95C54125D68ED3006448DE /* SehatQ-test */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C54225D68ED3006448DE /* AppDelegate.swift */,
+				CE95C54425D68ED3006448DE /* SceneDelegate.swift */,
+				CE95C54625D68ED3006448DE /* ViewController.swift */,
+				CE95C54825D68ED3006448DE /* Main.storyboard */,
+				CE95C54E25D68ED5006448DE /* Assets.xcassets */,
+				CE95C55025D68ED5006448DE /* LaunchScreen.storyboard */,
+				CE95C55325D68ED5006448DE /* Info.plist */,
+				CE95C54B25D68ED3006448DE /* SehatQ_test.xcdatamodeld */,
+			);
+			path = "SehatQ-test";
+			sourceTree = "<group>";
+		};
+		CE95C55B25D68ED5006448DE /* SehatQ-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C55C25D68ED5006448DE /* SehatQ_testTests.swift */,
+				CE95C55E25D68ED5006448DE /* Info.plist */,
+			);
+			path = "SehatQ-testTests";
+			sourceTree = "<group>";
+		};
+		CE95C56625D68ED5006448DE /* SehatQ-testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C56725D68ED5006448DE /* SehatQ_testUITests.swift */,
+				CE95C56925D68ED5006448DE /* Info.plist */,
+			);
+			path = "SehatQ-testUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE95C53E25D68ED3006448DE /* SehatQ-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE95C56C25D68ED5006448DE /* Build configuration list for PBXNativeTarget "SehatQ-test" */;
+			buildPhases = (
+				CE95C53B25D68ED3006448DE /* Sources */,
+				CE95C53C25D68ED3006448DE /* Frameworks */,
+				CE95C53D25D68ED3006448DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SehatQ-test";
+			productName = "SehatQ-test";
+			productReference = CE95C53F25D68ED3006448DE /* SehatQ-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE95C55725D68ED5006448DE /* SehatQ-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE95C56F25D68ED5006448DE /* Build configuration list for PBXNativeTarget "SehatQ-testTests" */;
+			buildPhases = (
+				CE95C55425D68ED5006448DE /* Sources */,
+				CE95C55525D68ED5006448DE /* Frameworks */,
+				CE95C55625D68ED5006448DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE95C55A25D68ED5006448DE /* PBXTargetDependency */,
+			);
+			name = "SehatQ-testTests";
+			productName = "SehatQ-testTests";
+			productReference = CE95C55825D68ED5006448DE /* SehatQ-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE95C56225D68ED5006448DE /* SehatQ-testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE95C57225D68ED5006448DE /* Build configuration list for PBXNativeTarget "SehatQ-testUITests" */;
+			buildPhases = (
+				CE95C55F25D68ED5006448DE /* Sources */,
+				CE95C56025D68ED5006448DE /* Frameworks */,
+				CE95C56125D68ED5006448DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE95C56525D68ED5006448DE /* PBXTargetDependency */,
+			);
+			name = "SehatQ-testUITests";
+			productName = "SehatQ-testUITests";
+			productReference = CE95C56325D68ED5006448DE /* SehatQ-testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE95C53725D68ED3006448DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CE95C53E25D68ED3006448DE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CE95C55725D68ED5006448DE = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE95C53E25D68ED3006448DE;
+					};
+					CE95C56225D68ED5006448DE = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE95C53E25D68ED3006448DE;
+					};
+				};
+			};
+			buildConfigurationList = CE95C53A25D68ED3006448DE /* Build configuration list for PBXProject "SehatQ-test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE95C53625D68ED3006448DE;
+			productRefGroup = CE95C54025D68ED3006448DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE95C53E25D68ED3006448DE /* SehatQ-test */,
+				CE95C55725D68ED5006448DE /* SehatQ-testTests */,
+				CE95C56225D68ED5006448DE /* SehatQ-testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE95C53D25D68ED3006448DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95C55225D68ED5006448DE /* LaunchScreen.storyboard in Resources */,
+				CE95C54F25D68ED5006448DE /* Assets.xcassets in Resources */,
+				CE95C54A25D68ED3006448DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE95C55625D68ED5006448DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE95C56125D68ED5006448DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE95C53B25D68ED3006448DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95C54725D68ED3006448DE /* ViewController.swift in Sources */,
+				CE95C54D25D68ED3006448DE /* SehatQ_test.xcdatamodeld in Sources */,
+				CE95C54325D68ED3006448DE /* AppDelegate.swift in Sources */,
+				CE95C54525D68ED3006448DE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE95C55425D68ED5006448DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95C55D25D68ED5006448DE /* SehatQ_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE95C55F25D68ED5006448DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95C56825D68ED5006448DE /* SehatQ_testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE95C55A25D68ED5006448DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE95C53E25D68ED3006448DE /* SehatQ-test */;
+			targetProxy = CE95C55925D68ED5006448DE /* PBXContainerItemProxy */;
+		};
+		CE95C56525D68ED5006448DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE95C53E25D68ED3006448DE /* SehatQ-test */;
+			targetProxy = CE95C56425D68ED5006448DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE95C54825D68ED3006448DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE95C54925D68ED3006448DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE95C55025D68ED5006448DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE95C55125D68ED5006448DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE95C56A25D68ED5006448DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE95C56B25D68ED5006448DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE95C56D25D68ED5006448DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9734PFSD6;
+				INFOPLIST_FILE = "SehatQ-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tommyputranto.SehatQ-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE95C56E25D68ED5006448DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9734PFSD6;
+				INFOPLIST_FILE = "SehatQ-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tommyputranto.SehatQ-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE95C57025D68ED5006448DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9734PFSD6;
+				INFOPLIST_FILE = "SehatQ-testTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tommyputranto.SehatQ-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SehatQ-test.app/SehatQ-test";
+			};
+			name = Debug;
+		};
+		CE95C57125D68ED5006448DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9734PFSD6;
+				INFOPLIST_FILE = "SehatQ-testTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tommyputranto.SehatQ-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SehatQ-test.app/SehatQ-test";
+			};
+			name = Release;
+		};
+		CE95C57325D68ED5006448DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9734PFSD6;
+				INFOPLIST_FILE = "SehatQ-testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tommyputranto.SehatQ-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SehatQ-test";
+			};
+			name = Debug;
+		};
+		CE95C57425D68ED5006448DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9734PFSD6;
+				INFOPLIST_FILE = "SehatQ-testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tommyputranto.SehatQ-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SehatQ-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE95C53A25D68ED3006448DE /* Build configuration list for PBXProject "SehatQ-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE95C56A25D68ED5006448DE /* Debug */,
+				CE95C56B25D68ED5006448DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE95C56C25D68ED5006448DE /* Build configuration list for PBXNativeTarget "SehatQ-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE95C56D25D68ED5006448DE /* Debug */,
+				CE95C56E25D68ED5006448DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE95C56F25D68ED5006448DE /* Build configuration list for PBXNativeTarget "SehatQ-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE95C57025D68ED5006448DE /* Debug */,
+				CE95C57125D68ED5006448DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE95C57225D68ED5006448DE /* Build configuration list for PBXNativeTarget "SehatQ-testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE95C57325D68ED5006448DE /* Debug */,
+				CE95C57425D68ED5006448DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE95C54B25D68ED3006448DE /* SehatQ_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE95C54C25D68ED3006448DE /* SehatQ_test.xcdatamodel */,
+			);
+			currentVersion = CE95C54C25D68ED3006448DE /* SehatQ_test.xcdatamodel */;
+			path = SehatQ_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE95C53725D68ED3006448DE /* Project object */;
+}

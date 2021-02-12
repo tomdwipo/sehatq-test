@@ -16,6 +16,13 @@
 		CE95C55225D68ED5006448DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE95C55025D68ED5006448DE /* LaunchScreen.storyboard */; };
 		CE95C55D25D68ED5006448DE /* SehatQ_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C55C25D68ED5006448DE /* SehatQ_testTests.swift */; };
 		CE95C56825D68ED5006448DE /* SehatQ_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C56725D68ED5006448DE /* SehatQ_testUITests.swift */; };
+		CE95C58225D690F3006448DE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C58125D690F3006448DE /* Home.swift */; };
+		CE95C58B25D6916E006448DE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C58A25D6916E006448DE /* HTTPClient.swift */; };
+		CE95C59325D691F6006448DE /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C59225D691F6006448DE /* HTTPClientProtocol.swift */; };
+		CE95C5A225D6932E006448DE /* MockedHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C5A125D6932E006448DE /* MockedHTTPClient.swift */; };
+		CE95C5B225D69435006448DE /* home-response-success.json in Resources */ = {isa = PBXBuildFile; fileRef = CE95C5B125D69435006448DE /* home-response-success.json */; };
+		CE95C5CC25D6C29B006448DE /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C5CB25D6C29B006448DE /* HTTPClientTests.swift */; };
+		CE95C60925D6D13D006448DE /* MockedHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C5A125D6932E006448DE /* MockedHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,12 @@
 		CE95C56325D68ED5006448DE /* SehatQ-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SehatQ-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE95C56725D68ED5006448DE /* SehatQ_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SehatQ_testUITests.swift; sourceTree = "<group>"; };
 		CE95C56925D68ED5006448DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE95C58125D690F3006448DE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CE95C58A25D6916E006448DE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		CE95C59225D691F6006448DE /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		CE95C5A125D6932E006448DE /* MockedHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedHTTPClient.swift; sourceTree = "<group>"; };
+		CE95C5B125D69435006448DE /* home-response-success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "home-response-success.json"; sourceTree = "<group>"; };
+		CE95C5CB25D6C29B006448DE /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,8 @@
 		CE95C54125D68ED3006448DE /* SehatQ-test */ = {
 			isa = PBXGroup;
 			children = (
+				CE95C57F25D69010006448DE /* Model */,
+				CE95C57E25D68F30006448DE /* Network */,
 				CE95C54225D68ED3006448DE /* AppDelegate.swift */,
 				CE95C54425D68ED3006448DE /* SceneDelegate.swift */,
 				CE95C54625D68ED3006448DE /* ViewController.swift */,
@@ -116,6 +131,7 @@
 		CE95C55B25D68ED5006448DE /* SehatQ-testTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE95C5C925D6C270006448DE /* Network */,
 				CE95C55C25D68ED5006448DE /* SehatQ_testTests.swift */,
 				CE95C55E25D68ED5006448DE /* Info.plist */,
 			);
@@ -129,6 +145,73 @@
 				CE95C56925D68ED5006448DE /* Info.plist */,
 			);
 			path = "SehatQ-testUITests";
+			sourceTree = "<group>";
+		};
+		CE95C57E25D68F30006448DE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C58925D6914B006448DE /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE95C57F25D69010006448DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C58025D690E1006448DE /* Home */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE95C58025D690E1006448DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C58125D690F3006448DE /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE95C58925D6914B006448DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C58A25D6916E006448DE /* HTTPClient.swift */,
+				CE95C59225D691F6006448DE /* HTTPClientProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE95C5A025D6931E006448DE /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C5A125D6932E006448DE /* MockedHTTPClient.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		CE95C5B025D693D3006448DE /* JSON-response */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C5B125D69435006448DE /* home-response-success.json */,
+			);
+			path = "JSON-response";
+			sourceTree = "<group>";
+		};
+		CE95C5C925D6C270006448DE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C5A025D6931E006448DE /* Mock */,
+				CE95C5B025D693D3006448DE /* JSON-response */,
+				CE95C5CA25D6C276006448DE /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE95C5CA25D6C276006448DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C5CB25D6C29B006448DE /* HTTPClientTests.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE95C5B225D69435006448DE /* home-response-success.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE95C59325D691F6006448DE /* HTTPClientProtocol.swift in Sources */,
 				CE95C54725D68ED3006448DE /* ViewController.swift in Sources */,
 				CE95C54D25D68ED3006448DE /* SehatQ_test.xcdatamodeld in Sources */,
+				CE95C60925D6D13D006448DE /* MockedHTTPClient.swift in Sources */,
+				CE95C58B25D6916E006448DE /* HTTPClient.swift in Sources */,
+				CE95C58225D690F3006448DE /* Home.swift in Sources */,
 				CE95C54325D68ED3006448DE /* AppDelegate.swift in Sources */,
 				CE95C54525D68ED3006448DE /* SceneDelegate.swift in Sources */,
 			);
@@ -273,6 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE95C55D25D68ED5006448DE /* SehatQ_testTests.swift in Sources */,
+				CE95C5A225D6932E006448DE /* MockedHTTPClient.swift in Sources */,
+				CE95C5CC25D6C29B006448DE /* HTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9734PFSD6;
 				INFOPLIST_FILE = "SehatQ-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9734PFSD6;
 				INFOPLIST_FILE = "SehatQ-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

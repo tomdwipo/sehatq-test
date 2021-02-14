@@ -1,28 +1,28 @@
 //
-//  ViewModel.swift
+//  PurchasedViewModel.swift
 //  SehatQ-test
 //
-//  Created by user on 13/02/21.
+//  Created by user on 14/02/21.
 //
 
 import Foundation
 import UIKit
 
-protocol SearchViewModelDelegate {
+protocol PurchasedViewModelDelegate {
     func didFinishFetchSearchData(models: [CommonModel])
     func didTableCellTapped(data: ProductPromo)
 }
 
-struct SearchViewModel {
+struct PurchasedViewModel {
     private var model : [CommonModel] = []
-   
-    var searchDelegate: SearchViewModelDelegate?
-     func fetchSearchData(textDidChange searchText: String){
-        let home: Home? = Preference.getObjectDecodable(key: Constant.shared.PREFERENCE_HOME)
-        guard let data = home else { return }
-        let models: [CommonModel] = data.productPromo.map{ CommonModel(id: $0.id,image: $0.imageURL, title: $0.title, price: $0.price) }
+    var delegate: PurchasedViewModelDelegate?
+    var searchDelegate: PurchasedViewModelDelegate?
+     func fetchPurchasedData(){
+        let dataLists: [ProductPromo]? = Preference.getObjectDecodable(key: Constant.shared.PREFERENCE_PRODUCT)
+        guard let data = dataLists else { return }
+        let models: [CommonModel] = data.map{ CommonModel(id: $0.id,image: $0.imageURL, title: $0.title, price: $0.price) }
         DispatchQueue.main.async {
-            self.searchDelegate?.didFinishFetchSearchData(models: searchText.isEmpty ?  [] : models)
+            self.delegate?.didFinishFetchSearchData(models: models)
         }
     }
     
@@ -47,6 +47,6 @@ struct SearchViewModel {
         let id = self.model[index].id
         let productPromoFilter = data.productPromo.filter{ $0.id ==  id }.first
         guard let productPromo = productPromoFilter else { return }
-        self.searchDelegate?.didTableCellTapped(data: productPromo)
+        self.delegate?.didTableCellTapped(data: productPromo)
     }
 }

@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class DetailProductViewController: UIViewController {
+class DetailProductViewController: BaseViewController {
     
     @IBOutlet var imageDetail: UIImageView!
     @IBOutlet var titleDetail: UILabel!
@@ -29,9 +29,22 @@ class DetailProductViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "Detail Product"
         self.viewModel.delegate = self
-        // Do any additional setup after loading the view.
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_share"), style: .plain, target: self, action: #selector(shareTapped))
+    }
+    
+    
+    @objc func shareTapped(){
+        let textShare = [ "oke" ]
+        let activityViewController = UIActivityViewController(activityItems: textShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func buyTapped(_ sender: Any) {
+        self.viewModel.purchaseProduct()
+        PurchasedViewController.builder(self)
     }
     
     override func viewWillAppear(_ animated: Bool) {

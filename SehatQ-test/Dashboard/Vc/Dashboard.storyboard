@@ -9,17 +9,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="ASB-um-9I1">
             <objects>
-                <viewController id="FIl-5h-PQU" sceneMemberID="viewController">
+                <viewController id="FIl-5h-PQU" customClass="ContainerHomeViewController" customModule="SehatQ_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dc6-3Y-Pe0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vo6-UD-dCq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="EyI-dl-JPO"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="EyI-dl-JPO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tjv-hP-80c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,9 +28,10 @@
         <!--Tab Bar Controller-->
         <scene sceneID="My6-fe-gT5">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mDh-c5-SYO" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbar" automaticallyAdjustsScrollViewInsets="NO" id="mDh-c5-SYO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TEt-12-3gQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -43,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="388" y="216"/>
         </scene>
-        <!--Item2-->
+        <!--Profile-->
         <scene sceneID="dz2-dK-FYm">
             <objects>
                 <viewController id="6Rq-8D-xtG" sceneMemberID="viewController">
@@ -53,7 +54,7 @@
                         <viewLayoutGuide key="safeArea" id="8wR-pJ-efo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item2" id="nEM-SR-oZH"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="nEM-SR-oZH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kg5-v4-AhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

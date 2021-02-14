@@ -23,4 +23,18 @@ struct DetailProductViewModel {
         guard let model = self.model else { return }
         self.delegate?.didFinishFetchingData(model: model)
     }
+    
+    func purchaseProduct(){
+        guard let model = self.model else { return }
+
+        let productPromo = model.data
+        let dataLists: [ProductPromo]? = Preference.getObjectDecodable(key: Constant.shared.PREFERENCE_PRODUCT)
+        var productPromoList: [ProductPromo] = []
+        
+        if let data = dataLists {
+            productPromoList = data
+        }
+        productPromoList.append(productPromo)
+        Preference.saveObjectEncodable(dataModel: productPromoList, key: Constant.shared.PREFERENCE_PRODUCT)
+    }
 }

@@ -26,7 +26,7 @@
 		CE95C5B225D69435006448DE /* home-response-success.json in Resources */ = {isa = PBXBuildFile; fileRef = CE95C5B125D69435006448DE /* home-response-success.json */; };
 		CE95C5CC25D6C29B006448DE /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C5CB25D6C29B006448DE /* HTTPClientTests.swift */; };
 		CE95C60925D6D13D006448DE /* MockedHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95C5A125D6932E006448DE /* MockedHTTPClient.swift */; };
-		CEAA923025D8229C007E31A1 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA922F25D8229C007E31A1 /* SearchModel.swift */; };
+		CEAA923025D8229C007E31A1 /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA922F25D8229C007E31A1 /* CommonModel.swift */; };
 		CEAA923925D82325007E31A1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA923825D82325007E31A1 /* SearchViewModel.swift */; };
 		CEAA924225D83844007E31A1 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA924125D83844007E31A1 /* Preference.swift */; };
 		CEAA925225D84508007E31A1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA925125D84508007E31A1 /* Constant.swift */; };
@@ -35,6 +35,12 @@
 		CEAA926525D8FDD6007E31A1 /* DetailProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA926425D8FDD6007E31A1 /* DetailProductViewModel.swift */; };
 		CEAA926E25D8FEB1007E31A1 /* DetailProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAA926D25D8FEB1007E31A1 /* DetailProduct.storyboard */; };
 		CEAA927425D8FED8007E31A1 /* DetailProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA927225D8FED8007E31A1 /* DetailProductViewController.swift */; };
+		CEAA929825D914D6007E31A1 /* PurchasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA929725D914D6007E31A1 /* PurchasedViewController.swift */; };
+		CEAA92A025D914E8007E31A1 /* Purchased.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAA929F25D914E8007E31A1 /* Purchased.storyboard */; };
+		CEAA92A625D915E8007E31A1 /* PurchasedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA92A525D915E8007E31A1 /* PurchasedViewModel.swift */; };
+		CEAA92B025D91E9A007E31A1 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA92AF25D91E9A007E31A1 /* DashboardRouter.swift */; };
+		CEAA92B925D91F39007E31A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA92B825D91F39007E31A1 /* BaseViewController.swift */; };
+		CEAA92BF25D91FC7007E31A1 /* ContainerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA92BE25D91FC7007E31A1 /* ContainerHomeViewController.swift */; };
 		CED2FE2525D70CDB00C28F36 /* CategoriesTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2FE2425D70CDB00C28F36 /* CategoriesTableViewCellTests.swift */; };
 		CED2FE4025D7165F00C28F36 /* CategoriesCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2FE3F25D7165F00C28F36 /* CategoriesCollectionCellViewModel.swift */; };
 		CED2FEB825D7CE9700C28F36 /* ProductsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2FEAB25D7CE9700C28F36 /* ProductsTableViewCellViewModel.swift */; };
@@ -101,7 +107,7 @@
 		CE95C5A125D6932E006448DE /* MockedHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedHTTPClient.swift; sourceTree = "<group>"; };
 		CE95C5B125D69435006448DE /* home-response-success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "home-response-success.json"; sourceTree = "<group>"; };
 		CE95C5CB25D6C29B006448DE /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
-		CEAA922F25D8229C007E31A1 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		CEAA922F25D8229C007E31A1 /* CommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		CEAA923825D82325007E31A1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		CEAA924125D83844007E31A1 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		CEAA925125D84508007E31A1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -110,6 +116,12 @@
 		CEAA926425D8FDD6007E31A1 /* DetailProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductViewModel.swift; sourceTree = "<group>"; };
 		CEAA926D25D8FEB1007E31A1 /* DetailProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailProduct.storyboard; sourceTree = "<group>"; };
 		CEAA927225D8FED8007E31A1 /* DetailProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductViewController.swift; sourceTree = "<group>"; };
+		CEAA929725D914D6007E31A1 /* PurchasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedViewController.swift; sourceTree = "<group>"; };
+		CEAA929F25D914E8007E31A1 /* Purchased.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Purchased.storyboard; sourceTree = "<group>"; };
+		CEAA92A525D915E8007E31A1 /* PurchasedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedViewModel.swift; sourceTree = "<group>"; };
+		CEAA92AF25D91E9A007E31A1 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		CEAA92B825D91F39007E31A1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CEAA92BE25D91FC7007E31A1 /* ContainerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerHomeViewController.swift; sourceTree = "<group>"; };
 		CED2FE2425D70CDB00C28F36 /* CategoriesTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCellTests.swift; sourceTree = "<group>"; };
 		CED2FE3F25D7165F00C28F36 /* CategoriesCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionCellViewModel.swift; sourceTree = "<group>"; };
 		CED2FEAB25D7CE9700C28F36 /* ProductsTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -204,6 +216,8 @@
 		CE95C54125D68ED3006448DE /* SehatQ-test */ = {
 			isa = PBXGroup;
 			children = (
+				CEAA92B725D91F2B007E31A1 /* Base */,
+				CEAA928E25D913B8007E31A1 /* Purchased */,
 				CEAA927C25D90AAB007E31A1 /* Common */,
 				CEAA925C25D8FC99007E31A1 /* DetailProduct */,
 				CEAA925625D845F3007E31A1 /* Dashboard */,
@@ -323,7 +337,7 @@
 		CEAA922E25D82289007E31A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CEAA922F25D8229C007E31A1 /* SearchModel.swift */,
+				CEAA922F25D8229C007E31A1 /* CommonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,7 +362,9 @@
 		CEAA925625D845F3007E31A1 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				CEAA925725D8460A007E31A1 /* Dashboard.storyboard */,
+				CEAA92BD25D91FB3007E31A1 /* ContainerHome */,
+				CEAA92AE25D91E84007E31A1 /* Router */,
+				CEAA92AD25D91E29007E31A1 /* Vc */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -391,9 +407,68 @@
 		CEAA927C25D90AAB007E31A1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CEAA922E25D82289007E31A1 /* Model */,
 				CED2FEF525D80DD800C28F36 /* View */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		CEAA928E25D913B8007E31A1 /* Purchased */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA929625D914BF007E31A1 /* Vc */,
+				CEAA928F25D9142F007E31A1 /* ViewModel */,
+			);
+			path = Purchased;
+			sourceTree = "<group>";
+		};
+		CEAA928F25D9142F007E31A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA92A525D915E8007E31A1 /* PurchasedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEAA929625D914BF007E31A1 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA929725D914D6007E31A1 /* PurchasedViewController.swift */,
+				CEAA929F25D914E8007E31A1 /* Purchased.storyboard */,
+			);
+			path = Vc;
+			sourceTree = "<group>";
+		};
+		CEAA92AD25D91E29007E31A1 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA925725D8460A007E31A1 /* Dashboard.storyboard */,
+			);
+			path = Vc;
+			sourceTree = "<group>";
+		};
+		CEAA92AE25D91E84007E31A1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA92AF25D91E9A007E31A1 /* DashboardRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CEAA92B725D91F2B007E31A1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA92B825D91F39007E31A1 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CEAA92BD25D91FB3007E31A1 /* ContainerHome */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA92BE25D91FC7007E31A1 /* ContainerHomeViewController.swift */,
+			);
+			path = ContainerHome;
 			sourceTree = "<group>";
 		};
 		CED2FE2325D70C0500C28F36 /* Categories */ = {
@@ -505,7 +580,6 @@
 			isa = PBXGroup;
 			children = (
 				CEAA923725D82319007E31A1 /* ViewModel */,
-				CEAA922E25D82289007E31A1 /* Model */,
 				CED2FF0025D8126800C28F36 /* Vc */,
 			);
 			path = Search;
@@ -643,6 +717,7 @@
 				CED2FF0425D813CB00C28F36 /* CommonTableViewCell.xib in Resources */,
 				CED2FEB925D7CE9700C28F36 /* ProductsTableViewCell.xib in Resources */,
 				CEAA926E25D8FEB1007E31A1 /* DetailProduct.storyboard in Resources */,
+				CEAA92A025D914E8007E31A1 /* Purchased.storyboard in Resources */,
 				CE95C54F25D68ED5006448DE /* Assets.xcassets in Resources */,
 				CED2FEBB25D7CE9700C28F36 /* HomeCategoriesTableViewCell.xib in Resources */,
 				CE95C54A25D68ED3006448DE /* Main.storyboard in Resources */,
@@ -779,10 +854,13 @@
 				CE95C59325D691F6006448DE /* HTTPClientProtocol.swift in Sources */,
 				CED2FEBD25D7CE9700C28F36 /* CategoriesCollectionCell.swift in Sources */,
 				CE95C54725D68ED3006448DE /* ViewController.swift in Sources */,
-				CEAA923025D8229C007E31A1 /* SearchModel.swift in Sources */,
+				CEAA923025D8229C007E31A1 /* CommonModel.swift in Sources */,
 				CEAA925F25D8FD04007E31A1 /* DetailProductModel.swift in Sources */,
+				CEAA92B925D91F39007E31A1 /* BaseViewController.swift in Sources */,
 				CE95C54D25D68ED3006448DE /* SehatQ_test.xcdatamodeld in Sources */,
 				CED2FE4025D7165F00C28F36 /* CategoriesCollectionCellViewModel.swift in Sources */,
+				CEAA92B025D91E9A007E31A1 /* DashboardRouter.swift in Sources */,
+				CEAA929825D914D6007E31A1 /* PurchasedViewController.swift in Sources */,
 				CED2FECC25D7D07600C28F36 /* HomeViewController.swift in Sources */,
 				CE95C60925D6D13D006448DE /* MockedHTTPClient.swift in Sources */,
 				CE95C58B25D6916E006448DE /* HTTPClient.swift in Sources */,
@@ -797,6 +875,8 @@
 				CED2FEC425D7CEDD00C28F36 /* HomeViewModel.swift in Sources */,
 				CED2FEBA25D7CE9700C28F36 /* ProductsTableViewCell.swift in Sources */,
 				CED2FEB825D7CE9700C28F36 /* ProductsTableViewCellViewModel.swift in Sources */,
+				CEAA92BF25D91FC7007E31A1 /* ContainerHomeViewController.swift in Sources */,
+				CEAA92A625D915E8007E31A1 /* PurchasedViewModel.swift in Sources */,
 				CEAA927425D8FED8007E31A1 /* DetailProductViewController.swift in Sources */,
 				CED2FEBC25D7CE9700C28F36 /* HomeCategoriesTableViewCell.swift in Sources */,
 				CE95C54525D68ED3006448DE /* SceneDelegate.swift in Sources */,

@@ -48,6 +48,9 @@
                                         <state key="normal" title="Buy">
                                             <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buyTapped:" destination="9vN-Iw-MaH" eventType="touchUpInside" id="p0q-fL-nQb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cso-kl-9at">
                                         <rect key="frame" x="252" y="211.5" width="42" height="21"/>

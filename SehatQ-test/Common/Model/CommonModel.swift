@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SearchModel {
+struct CommonModel {
     var id: String = ""
     var image: String = ""
     var title: String = ""

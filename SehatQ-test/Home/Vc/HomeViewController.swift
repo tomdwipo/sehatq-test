@@ -38,7 +38,7 @@ class HomeViewController: BaseViewController {
     }
     
     @objc func purchaseTapped(){
-        print("test")
+        PurchasedViewController.builder(self)
     }
     
     func setNavigation(){
@@ -63,7 +63,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: UISearchBarDelegate {
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-        SearchViewController.buidler(self, products: self.homeViewModel.shareProductPromo())
+        SearchViewController.buidler(self)
         return false
     }
     

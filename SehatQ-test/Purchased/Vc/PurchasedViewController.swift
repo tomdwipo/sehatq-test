@@ -1,32 +1,34 @@
 //
-//  SearchViewController.swift
+//  PurchasedViewController.swift
 //  SehatQ-test
 //
-//  Created by user on 13/02/21.
+//  Created by user on 14/02/21.
 //
 
 import UIKit
 
-class SearchViewController: BaseViewController {
-
+class PurchasedViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
-    var viewModel: SearchViewModel = SearchViewModel()
-    
-    static func buidler(_ caller: UIViewController) {
-        let sb = UIStoryboard(name: "Search", bundle:nil)
-        let vc = sb.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+    var viewModel: PurchasedViewModel = PurchasedViewModel()
+
+    static func builder(_ caller: UIViewController) {
+        let sb = UIStoryboard(name: "Purchased", bundle:nil)
+        let vc = sb.instantiateViewController(withIdentifier: "PurchasedViewController") as! PurchasedViewController
         vc.modalPresentationStyle = .fullScreen
         caller.navigationController?.pushViewController(vc, animated: true)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewModel.searchDelegate = self
-        setSearchBar(vc: self)
-        self.searchBar.becomeFirstResponder()
-        self.registerTableview()
+        self.navigationItem.title = "Purchased History"
+        registerTableview()
+        self.viewModel.delegate = self
+        self.viewModel.fetchPurchasedData()
+        
+        
         // Do any additional setup after loading the view.
     }
+    
+  
     
     func registerTableview()  {
         self.tableView.register(UINib(nibName: CommonTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: CommonTableViewCell.identifier)
@@ -36,9 +38,11 @@ class SearchViewController: BaseViewController {
         self.tableView.rowHeight = UITableView.automaticDimension
     }
 
+
 }
 
-extension SearchViewController: SearchViewModelDelegate {
+
+extension PurchasedViewController: PurchasedViewModelDelegate {
     func didTableCellTapped(data: ProductPromo) {
         DetailProductViewController.buidler(self, product: data)
     }
@@ -49,14 +53,7 @@ extension SearchViewController: SearchViewModelDelegate {
     }
 }
 
-extension SearchViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.viewModel.fetchSearchData(textDidChange: searchText)
-    }
-}
-
-
-extension SearchViewController: UITableViewDataSource , UITableViewDelegate{
+extension PurchasedViewController: UITableViewDataSource , UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.setTableViewRowCountCell()
     }

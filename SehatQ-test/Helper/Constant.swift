@@ -11,4 +11,6 @@ struct Constant {
     static let shared = Constant()
     
     let PREFERENCE_HOME = "PREFERENCE_HOME"
+    let PREFERENCE_PRODUCT = "PREFERENCE_PRODUCT"
+
 }

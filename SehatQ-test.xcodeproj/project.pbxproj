@@ -41,6 +41,9 @@
 		CEAA92B025D91E9A007E31A1 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA92AF25D91E9A007E31A1 /* DashboardRouter.swift */; };
 		CEAA92B925D91F39007E31A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA92B825D91F39007E31A1 /* BaseViewController.swift */; };
 		CEAA92BF25D91FC7007E31A1 /* ContainerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA92BE25D91FC7007E31A1 /* ContainerHomeViewController.swift */; };
+		CEAA92D225D924E7007E31A1 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEAA92D125D924E7007E31A1 /* credentials.plist */; };
+		CEAA92ED25D92EC3007E31A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA92EC25D92EC3007E31A1 /* LoginViewController.swift */; };
+		CEAA92F225D92ECD007E31A1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAA92F125D92ECD007E31A1 /* Login.storyboard */; };
 		CED2FE2525D70CDB00C28F36 /* CategoriesTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2FE2425D70CDB00C28F36 /* CategoriesTableViewCellTests.swift */; };
 		CED2FE4025D7165F00C28F36 /* CategoriesCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2FE3F25D7165F00C28F36 /* CategoriesCollectionCellViewModel.swift */; };
 		CED2FEB825D7CE9700C28F36 /* ProductsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2FEAB25D7CE9700C28F36 /* ProductsTableViewCellViewModel.swift */; };
@@ -122,6 +125,9 @@
 		CEAA92AF25D91E9A007E31A1 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
 		CEAA92B825D91F39007E31A1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CEAA92BE25D91FC7007E31A1 /* ContainerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerHomeViewController.swift; sourceTree = "<group>"; };
+		CEAA92D125D924E7007E31A1 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		CEAA92EC25D92EC3007E31A1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEAA92F125D92ECD007E31A1 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CED2FE2425D70CDB00C28F36 /* CategoriesTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCellTests.swift; sourceTree = "<group>"; };
 		CED2FE3F25D7165F00C28F36 /* CategoriesCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionCellViewModel.swift; sourceTree = "<group>"; };
 		CED2FEAB25D7CE9700C28F36 /* ProductsTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -216,6 +222,7 @@
 		CE95C54125D68ED3006448DE /* SehatQ-test */ = {
 			isa = PBXGroup;
 			children = (
+				CEAA92EA25D92E9F007E31A1 /* Login */,
 				CEAA92B725D91F2B007E31A1 /* Base */,
 				CEAA928E25D913B8007E31A1 /* Purchased */,
 				CEAA927C25D90AAB007E31A1 /* Common */,
@@ -231,6 +238,7 @@
 				CE95C54E25D68ED5006448DE /* Assets.xcassets */,
 				CE95C55025D68ED5006448DE /* LaunchScreen.storyboard */,
 				CE95C55325D68ED5006448DE /* Info.plist */,
+				CEAA92D125D924E7007E31A1 /* credentials.plist */,
 				CE95C54B25D68ED3006448DE /* SehatQ_test.xcdatamodeld */,
 			);
 			path = "SehatQ-test";
@@ -471,6 +479,23 @@
 			path = ContainerHome;
 			sourceTree = "<group>";
 		};
+		CEAA92EA25D92E9F007E31A1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA92EB25D92EA8007E31A1 /* Vc */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CEAA92EB25D92EA8007E31A1 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA92EC25D92EC3007E31A1 /* LoginViewController.swift */,
+				CEAA92F125D92ECD007E31A1 /* Login.storyboard */,
+			);
+			path = Vc;
+			sourceTree = "<group>";
+		};
 		CED2FE2325D70C0500C28F36 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -615,6 +640,7 @@
 				CE95C53C25D68ED3006448DE /* Frameworks */,
 				CE95C53D25D68ED3006448DE /* Resources */,
 				A504D1D3C307849E0FECC027 /* [CP] Embed Pods Frameworks */,
+				B778A3ECC67A1138B2285FC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -653,6 +679,7 @@
 				CE95C56025D68ED5006448DE /* Frameworks */,
 				CE95C56125D68ED5006448DE /* Resources */,
 				A241BB0AAB21C56D0C5CA0F3 /* [CP] Embed Pods Frameworks */,
+				6AA0E260C66E07DD267C17AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -713,6 +740,7 @@
 			files = (
 				CED2FED525D7D08900C28F36 /* Home.storyboard in Resources */,
 				CEAA925825D8460A007E31A1 /* Dashboard.storyboard in Resources */,
+				CEAA92F225D92ECD007E31A1 /* Login.storyboard in Resources */,
 				CE95C55225D68ED5006448DE /* LaunchScreen.storyboard in Resources */,
 				CED2FF0425D813CB00C28F36 /* CommonTableViewCell.xib in Resources */,
 				CED2FEB925D7CE9700C28F36 /* ProductsTableViewCell.xib in Resources */,
@@ -723,6 +751,7 @@
 				CE95C54A25D68ED3006448DE /* Main.storyboard in Resources */,
 				CED2FEF725D80E1C00C28F36 /* Search.storyboard in Resources */,
 				CED2FEBE25D7CE9700C28F36 /* CategoriesCollectionCell.xib in Resources */,
+				CEAA92D225D924E7007E31A1 /* credentials.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -810,6 +839,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6AA0E260C66E07DD267C17AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SehatQ-test-SehatQ-testUITests/Pods-SehatQ-test-SehatQ-testUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SehatQ-test-SehatQ-testUITests/Pods-SehatQ-test-SehatQ-testUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SehatQ-test-SehatQ-testUITests/Pods-SehatQ-test-SehatQ-testUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A241BB0AAB21C56D0C5CA0F3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -844,6 +890,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SehatQ-test/Pods-SehatQ-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B778A3ECC67A1138B2285FC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SehatQ-test/Pods-SehatQ-test-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SehatQ-test/Pods-SehatQ-test-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SehatQ-test/Pods-SehatQ-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -869,6 +932,7 @@
 				CE95C54325D68ED3006448DE /* AppDelegate.swift in Sources */,
 				CEAA923925D82325007E31A1 /* SearchViewModel.swift in Sources */,
 				CED2FEFC25D80E4B00C28F36 /* SearchViewController.swift in Sources */,
+				CEAA92ED25D92EC3007E31A1 /* LoginViewController.swift in Sources */,
 				CEAA925225D84508007E31A1 /* Constant.swift in Sources */,
 				CED2FF0325D813CB00C28F36 /* CommonTableViewCell.swift in Sources */,
 				CEAA926525D8FDD6007E31A1 /* DetailProductViewModel.swift in Sources */,

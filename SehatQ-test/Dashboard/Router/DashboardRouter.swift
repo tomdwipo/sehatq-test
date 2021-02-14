@@ -15,7 +15,10 @@ struct DashboardRouter {
         let sb = UIStoryboard(name: "Dashboard", bundle:nil)
         let vc = sb.instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
         vc.modalPresentationStyle = .fullScreen
-        caller.present(vc, animated: false, completion: nil)
+        caller.addChild(vc)
+        caller.view.addSubview(vc.view)
+        vc.didMove(toParent: caller)
+       // caller.present(vc, animated: false, completion: nil)
         
     }
 }

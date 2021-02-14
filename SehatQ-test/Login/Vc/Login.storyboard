@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MrZ-SZ-FYA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="nVd-ZC-vBA">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="MrZ-SZ-FYA" customClass="LoginViewController" customModule="SehatQ_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cch-eW-zxu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mA3-Ai-WqD">
+                                <rect key="frame" x="30" y="144" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC5-9q-m25">
+                                <rect key="frame" x="30" y="198" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kj-GZ-1Yt">
+                                <rect key="frame" x="337" y="252" width="47" height="30"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signInTapped:" destination="MrZ-SZ-FYA" eventType="touchUpInside" id="NMo-cj-nEb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LB6-OJ-8Fc" customClass="GIDSignInButton">
+                                <rect key="frame" x="30" y="302" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mhg-rX-f1h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="72r-5N-yLf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cC5-9q-m25" firstAttribute="top" secondItem="mA3-Ai-WqD" secondAttribute="bottom" constant="20" id="3SQ-VR-aED"/>
+                            <constraint firstItem="72r-5N-yLf" firstAttribute="trailing" secondItem="LB6-OJ-8Fc" secondAttribute="trailing" constant="30" id="8Fs-Vg-7qv"/>
+                            <constraint firstItem="mA3-Ai-WqD" firstAttribute="leading" secondItem="72r-5N-yLf" secondAttribute="leading" constant="30" id="Oyo-1u-ajC"/>
+                            <constraint firstItem="3Kj-GZ-1Yt" firstAttribute="top" secondItem="cC5-9q-m25" secondAttribute="bottom" constant="20" id="VJc-by-gTG"/>
+                            <constraint firstItem="mA3-Ai-WqD" firstAttribute="top" secondItem="72r-5N-yLf" secondAttribute="top" constant="100" id="aKb-sc-ejm"/>
+                            <constraint firstItem="72r-5N-yLf" firstAttribute="trailing" secondItem="3Kj-GZ-1Yt" secondAttribute="trailing" constant="30" id="aQl-bt-mJf"/>
+                            <constraint firstItem="cC5-9q-m25" firstAttribute="leading" secondItem="72r-5N-yLf" secondAttribute="leading" constant="30" id="agC-n4-fuL"/>
+                            <constraint firstItem="LB6-OJ-8Fc" firstAttribute="top" secondItem="3Kj-GZ-1Yt" secondAttribute="bottom" constant="20" id="fdf-G9-1Fd"/>
+                            <constraint firstItem="72r-5N-yLf" firstAttribute="trailing" secondItem="cC5-9q-m25" secondAttribute="trailing" constant="30" id="gh8-yr-fwk"/>
+                            <constraint firstItem="LB6-OJ-8Fc" firstAttribute="leading" secondItem="72r-5N-yLf" secondAttribute="leading" constant="30" id="qZI-Ey-ZFV"/>
+                            <constraint firstItem="72r-5N-yLf" firstAttribute="trailing" secondItem="mA3-Ai-WqD" secondAttribute="trailing" constant="30" id="rnG-aO-Pgy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="googleSignIn" destination="LB6-OJ-8Fc" id="eXc-KN-6Lf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfB-b5-I8l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

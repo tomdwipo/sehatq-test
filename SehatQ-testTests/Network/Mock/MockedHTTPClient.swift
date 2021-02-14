@@ -8,6 +8,7 @@
 import Foundation
 @testable import SehatQ_test
 
+
 class MockedHTTPClient: HTTPClientProtocol {
     func getHomeData(completion: @escaping (Home?) -> Void) {
         guard let url = Bundle(for: MockedHTTPClient.self).url(forResource: "home-response-success", withExtension: "json"),let responseData = try? Data(contentsOf: url) else { return }

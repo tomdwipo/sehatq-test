@@ -16,8 +16,19 @@ class HTTPClient: HTTPClientProtocol {
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
             URLSession.shared.dataTask(with: request) { data, response, error in
-                print(response ?? "")
-                completion(self.converDataToModel(responseData: data))
+                
+                guard let response = response as? HTTPURLResponse else {
+                    completion(nil)
+                    return
+                }
+                print(response)
+                if response.statusCode == 200 {
+                    
+                    completion(self.converDataToModel(responseData: data))
+                }else{
+                    completion(nil)
+                }
+            
             }.resume()
         }
     }
@@ -44,9 +55,9 @@ class HTTPClient: HTTPClientProtocol {
                     }
                 }
             }
-            print(json ?? "")
             home.category = categories
             home.productPromo = productPromoList
+            Preference.saveObjectEncodable(dataModel: home, key: Constant.shared.PREFERENCE_HOME)
             return home
         }
         return nil

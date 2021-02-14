@@ -7,7 +7,6 @@ target 'SehatQ-test' do
   
   pod 'Kingfisher', '~> 6.0'
   pod 'GoogleSignIn'
-  pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   # Pods for SehatQ-test
 

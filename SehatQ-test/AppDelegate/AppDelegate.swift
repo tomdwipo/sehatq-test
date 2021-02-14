@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import GoogleSignIn
+import FBSDKCoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,11 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GIDSignIn.sharedInstance().clientID = "685307548071-a82mulff2buiuu723qnokafiln08qfgm.apps.googleusercontent.com"
+        
+        ApplicationDelegate.shared.application(
+                   application,
+                   didFinishLaunchingWithOptions: launchOptions
+               )
+
         return true
     }
 
     @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        ApplicationDelegate.shared.application(
+                  app,
+                  open: url,
+                  sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                  annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+              )
       return GIDSignIn.sharedInstance().handle(url)
     }
     

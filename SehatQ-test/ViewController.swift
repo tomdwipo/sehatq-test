@@ -14,6 +14,7 @@ class ViewController: BaseViewController {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        
     }
 }
 

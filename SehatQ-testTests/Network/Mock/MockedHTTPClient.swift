@@ -11,7 +11,7 @@ import Foundation
 
 class MockedHTTPClient: HTTPClientProtocol {
     func getHomeData(completion: @escaping (Home?) -> Void) {
-        guard let url = Bundle(for: MockedHTTPClient.self).url(forResource: "home-response-success", withExtension: "json"),let responseData = try? Data(contentsOf: url) else { return }
+        guard let url = Bundle(for: type(of: self)).url(forResource: "home-response-success", withExtension: "json"),let responseData = try? Data(contentsOf: url) else { return }
         completion(HTTPClient.shared.converDataToModel(responseData: responseData))
     }
 }

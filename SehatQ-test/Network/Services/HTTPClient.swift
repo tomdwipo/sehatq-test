@@ -15,6 +15,10 @@ class HTTPClient: HTTPClientProtocol {
         if let url = URL(string: "https://private-4639ce-ecommerce56.apiary-mock.com/home") {
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
+            //        let params = ["username": username, "password": password]
+
+    //        request.httpBody = try? JSONEncoder().encode(params)
+            
             URLSession.shared.dataTask(with: request) { data, response, error in
                 
                 guard let response = response as? HTTPURLResponse else {

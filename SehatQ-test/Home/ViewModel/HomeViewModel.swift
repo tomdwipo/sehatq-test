@@ -20,7 +20,7 @@ struct HomeViewModel {
         HTTPClient.shared.getHomeData { (result) in
             guard let result = result else { return }
             DispatchQueue.main.async {
-                self.delegate?.didFinishFetchHome(data: result)
+               // self.delegate?.didFinishFetchHome(data: result)
             }
         }
     }
